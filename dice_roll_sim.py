@@ -1,18 +1,9 @@
 import random
 
-#while True:
-#    print random.randint(1,6)
-"""
 while True:
-    ask_user = raw_input("Would you like to roll the dice?")
-    if ask_user == "yes" or "y":
-        print random.randint(1,6)
-    else: ask_user == "no" or "n":
-        print("Just roll the dye already")
-"""
-
-ask_user = raw_input("would you like to roll the dice?")
-if ask_user == "yes" or "y":
-    print random.randint(1,6)
-else ask_user != "yes" or "y":
-    print("You're wasting my time")
+    ask_user = input("Would you like to roll the dice?: yes/y or no/n\n")
+    if ask_user in ("yes", "y"):
+        print(random.randint(1,6))
+        print("Congrats you rolled the dice! Let's keep doing it forever and ever and ever...\n")
+    elif ask_user in ("no", "n"):
+        print("You must press 'yes' or 'y'\n")
